@@ -21,7 +21,6 @@
 {
     _responseNewProgrammeData = responseNewProgrammeData;
     self.lblName.text = _responseNewProgrammeData.string1;
-    
 }
 
 + (BOOL)isStaticCell
