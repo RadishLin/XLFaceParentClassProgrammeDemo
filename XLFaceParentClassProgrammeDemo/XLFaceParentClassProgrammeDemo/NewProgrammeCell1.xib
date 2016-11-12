@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="NewProgrammeCell1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhp-5l-LpZ">
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_all" translatesAutoresizingMaskIntoConstraints="NO" id="Urn-gN-FG3">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="oM6-1U-jjV"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_alltop" translatesAutoresizingMaskIntoConstraints="NO" id="6xj-Xj-1Je">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="l92-w1-oqh"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTd-QF-IqD">
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="push"/>
+                        <connections>
+                            <action selector="didPressedPush:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fA2-QC-ibe"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fhp-5l-LpZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="0AB-Kg-96B"/>
+                    <constraint firstAttribute="trailing" secondItem="fhp-5l-LpZ" secondAttribute="trailing" constant="60" id="9XM-ig-Fmu"/>
+                    <constraint firstItem="Urn-gN-FG3" firstAttribute="top" secondItem="fhp-5l-LpZ" secondAttribute="bottom" id="AcG-hj-eHa"/>
+                    <constraint firstItem="6xj-Xj-1Je" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ChY-vV-xfo"/>
+                    <constraint firstItem="Urn-gN-FG3" firstAttribute="top" secondItem="fTd-QF-IqD" secondAttribute="bottom" id="Dme-2C-bIx"/>
+                    <constraint firstItem="fhp-5l-LpZ" firstAttribute="top" secondItem="6xj-Xj-1Je" secondAttribute="bottom" id="Hqu-Lc-WAh"/>
+                    <constraint firstAttribute="trailing" secondItem="Urn-gN-FG3" secondAttribute="trailing" id="Oc7-hS-kg6"/>
+                    <constraint firstItem="fTd-QF-IqD" firstAttribute="top" secondItem="6xj-Xj-1Je" secondAttribute="bottom" id="Z8s-5x-WHp"/>
+                    <constraint firstAttribute="trailing" secondItem="6xj-Xj-1Je" secondAttribute="trailing" id="adh-uz-hsh"/>
+                    <constraint firstItem="Urn-gN-FG3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oGc-OH-JzH"/>
+                    <constraint firstItem="6xj-Xj-1Je" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pNe-zz-K9b"/>
+                    <constraint firstItem="fTd-QF-IqD" firstAttribute="leading" secondItem="fhp-5l-LpZ" secondAttribute="trailing" constant="6" id="sx5-9O-Tad"/>
+                    <constraint firstAttribute="trailing" secondItem="fTd-QF-IqD" secondAttribute="trailing" constant="6" id="unc-W1-B6C"/>
+                    <constraint firstAttribute="bottom" secondItem="Urn-gN-FG3" secondAttribute="bottom" id="v9U-Yl-6wN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblName" destination="fhp-5l-LpZ" id="sv8-0p-W9o"/>
+            </connections>
+            <point key="canvasLocation" x="-472" y="-36"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="line_all" width="160" height="1"/>
+        <image name="line_alltop" width="160" height="1"/>
+    </resources>
+</document>

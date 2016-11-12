@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eOM-Fz-SRe" customClass="NewProgrammeCell2">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eOM-Fz-SRe" id="hmw-KJ-LEF">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_all" translatesAutoresizingMaskIntoConstraints="NO" id="y99-fp-Ap8">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="6bf-A2-Ji3"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_alltop" translatesAutoresizingMaskIntoConstraints="NO" id="wBH-fl-gTq">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="urM-wU-mwx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="arL-gx-waZ">
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.74509803919999995" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DY5-Rn-GGi">
+                        <color key="backgroundColor" red="0.13725490200000001" green="0.74509803919999995" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="push"/>
+                        <connections>
+                            <action selector="didPressedPush:" destination="eOM-Fz-SRe" eventType="touchUpInside" id="3Ar-Tb-Gr6"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y99-fp-Ap8" firstAttribute="top" secondItem="arL-gx-waZ" secondAttribute="bottom" id="1tZ-JG-D12"/>
+                    <constraint firstItem="wBH-fl-gTq" firstAttribute="leading" secondItem="hmw-KJ-LEF" secondAttribute="leading" id="2GL-Xe-z5F"/>
+                    <constraint firstAttribute="trailing" secondItem="DY5-Rn-GGi" secondAttribute="trailing" constant="6" id="8mw-my-9Lh"/>
+                    <constraint firstAttribute="trailing" secondItem="arL-gx-waZ" secondAttribute="trailing" constant="60" id="E68-0b-vDY"/>
+                    <constraint firstItem="y99-fp-Ap8" firstAttribute="leading" secondItem="hmw-KJ-LEF" secondAttribute="leading" id="JLH-wx-kwa"/>
+                    <constraint firstAttribute="trailing" secondItem="y99-fp-Ap8" secondAttribute="trailing" id="Owk-6X-MTK"/>
+                    <constraint firstItem="DY5-Rn-GGi" firstAttribute="top" secondItem="wBH-fl-gTq" secondAttribute="bottom" id="Vsi-7C-hIR"/>
+                    <constraint firstItem="arL-gx-waZ" firstAttribute="top" secondItem="wBH-fl-gTq" secondAttribute="bottom" id="ccr-IW-edq"/>
+                    <constraint firstAttribute="trailing" secondItem="wBH-fl-gTq" secondAttribute="trailing" id="gVk-7v-R1J"/>
+                    <constraint firstAttribute="bottom" secondItem="DY5-Rn-GGi" secondAttribute="bottom" id="jli-7q-Nvv"/>
+                    <constraint firstItem="arL-gx-waZ" firstAttribute="leading" secondItem="hmw-KJ-LEF" secondAttribute="leading" constant="10" id="mbm-Tu-O4q"/>
+                    <constraint firstItem="DY5-Rn-GGi" firstAttribute="leading" secondItem="arL-gx-waZ" secondAttribute="trailing" constant="6" id="n2F-J3-F2a"/>
+                    <constraint firstItem="wBH-fl-gTq" firstAttribute="top" secondItem="hmw-KJ-LEF" secondAttribute="top" id="nA6-oQ-vN4"/>
+                    <constraint firstAttribute="bottom" secondItem="y99-fp-Ap8" secondAttribute="bottom" id="zqO-s5-D0z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblName" destination="arL-gx-waZ" id="kj5-KS-Nbo"/>
+            </connections>
+            <point key="canvasLocation" x="-258" y="24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="line_all" width="160" height="1"/>
+        <image name="line_alltop" width="160" height="1"/>
+    </resources>
+</document>

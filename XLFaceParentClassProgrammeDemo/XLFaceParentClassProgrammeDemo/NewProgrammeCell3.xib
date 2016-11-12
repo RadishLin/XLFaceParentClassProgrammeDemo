@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Hyu-Sa-5jQ" customClass="NewProgrammeCell3">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hyu-Sa-5jQ" id="HLE-oP-l7m">
+                <frame key="frameInset" width="375" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="355" translatesAutoresizingMaskIntoConstraints="NO" id="r0o-2a-yxx">
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_alltop" translatesAutoresizingMaskIntoConstraints="NO" id="Ki5-NV-tvW">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="k0w-AC-MSn"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_all" translatesAutoresizingMaskIntoConstraints="NO" id="KgF-LP-Pux">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="82j-HP-PV7"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oO-2S-MY1">
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="update"/>
+                        <connections>
+                            <action selector="didPressedPush:" destination="Hyu-Sa-5jQ" eventType="touchUpInside" id="Rz2-c5-A3N"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KgF-LP-Pux" firstAttribute="leading" secondItem="HLE-oP-l7m" secondAttribute="leading" id="0Tg-PZ-TYK"/>
+                    <constraint firstAttribute="trailing" secondItem="r0o-2a-yxx" secondAttribute="trailing" constant="60" id="7Tj-kQ-1N4"/>
+                    <constraint firstItem="KgF-LP-Pux" firstAttribute="top" secondItem="2oO-2S-MY1" secondAttribute="bottom" id="9zM-0n-zjk"/>
+                    <constraint firstAttribute="trailing" secondItem="2oO-2S-MY1" secondAttribute="trailing" constant="6" id="KDN-VG-6nX"/>
+                    <constraint firstItem="r0o-2a-yxx" firstAttribute="top" secondItem="Ki5-NV-tvW" secondAttribute="bottom" id="W57-Ae-mB5"/>
+                    <constraint firstItem="r0o-2a-yxx" firstAttribute="leading" secondItem="HLE-oP-l7m" secondAttribute="leading" constant="10" id="ZqL-9H-I3f"/>
+                    <constraint firstItem="Ki5-NV-tvW" firstAttribute="top" secondItem="HLE-oP-l7m" secondAttribute="top" id="bmQ-L2-PGB"/>
+                    <constraint firstItem="KgF-LP-Pux" firstAttribute="top" secondItem="r0o-2a-yxx" secondAttribute="bottom" id="gZq-7G-Vcm"/>
+                    <constraint firstAttribute="bottom" secondItem="KgF-LP-Pux" secondAttribute="bottom" id="kWz-Mi-9Sd"/>
+                    <constraint firstItem="Ki5-NV-tvW" firstAttribute="leading" secondItem="HLE-oP-l7m" secondAttribute="leading" id="n88-bl-b8H"/>
+                    <constraint firstItem="2oO-2S-MY1" firstAttribute="leading" secondItem="r0o-2a-yxx" secondAttribute="trailing" constant="6" id="oZh-HL-Dx1"/>
+                    <constraint firstAttribute="trailing" secondItem="KgF-LP-Pux" secondAttribute="trailing" id="qrZ-8v-jT7"/>
+                    <constraint firstItem="2oO-2S-MY1" firstAttribute="top" secondItem="Ki5-NV-tvW" secondAttribute="bottom" id="tKh-mz-F5E"/>
+                    <constraint firstAttribute="trailing" secondItem="Ki5-NV-tvW" secondAttribute="trailing" id="xgT-DI-TZA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblName" destination="r0o-2a-yxx" id="gHy-OD-3CR"/>
+            </connections>
+            <point key="canvasLocation" x="-711" y="15"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="line_all" width="160" height="1"/>
+        <image name="line_alltop" width="160" height="1"/>
+    </resources>
+</document>
